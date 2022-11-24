@@ -1,0 +1,58 @@
+{
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "RUN Project 1",
+        "command": "go run github.com/golang-learnings/workspace/project-1",
+        "type": "shell",
+        "args": [],
+        "problemMatcher": [
+          "$tsc"
+        ],
+        "presentation": {
+          "reveal": "always"
+        },
+        "group": "build",
+      },
+      {
+        "label": "RUN Project 2",
+        "command": "go run github.com/golang-learnings/workspace/project-2",
+        "type": "shell",
+        "args": [],
+        "problemMatcher": [
+          "$tsc"
+        ],
+        "presentation": {
+          "reveal": "always"
+        },
+        "group": "build",
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "golang.Go"
+    ]
+  },
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "./project-1"
+    },
+    {
+      "path": "./project-2"
+    },
+    {
+      "path": "./quiz-problem"
+    },
+    {
+      "path": "./url-short"
+    },
+    {
+        "path": "./basic-cli"
+    }
+  ]
+}

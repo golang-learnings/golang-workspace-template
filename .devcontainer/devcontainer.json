@@ -1,0 +1,38 @@
+{
+    "name": "Codespaces Go Template Repository",
+    "extensions": [
+        "coenraads.bracket-pair-colorizer-2",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "ms-azuretools.vscode-docker",
+        "ms-vsliveshare.vsliveshare",
+        "vscode-icons-team.vscode-icons",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-vscode.go",
+        "ms-dotnettools.csharp"
+    ],
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [
+        5050,
+        3000
+    ],
+    "remoteEnv": {
+        "SPAWNCTL_ACCESS_TOKEN": "${localEnv:SPAWNCTL_ACCESS_TOKEN}"
+    },
+    "initializeCommand": "",
+    "onCreateCommand": [
+        "${containerWorkspaceFolder}/codespaces-start.sh"
+    ],
+    "updateContentCommand": [
+        "${containerWorkspaceFolder}/codespaces-build.sh"
+    ],
+    "postCreateCommand": "",
+    "postStartCommand": "",
+    "postAttachCommand": "",
+    "settings": {
+        "files.exclude": {
+            "**/CODE_OF_CONDUCT.md": true,
+            "**/LICENSE": true
+        }
+    }
+}

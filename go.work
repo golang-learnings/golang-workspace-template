@@ -1,0 +1,9 @@
+go 1.19
+
+use (
+	./basic-cli
+	./project-1
+	./project-2
+	./quiz-problem
+	./url-short
+)

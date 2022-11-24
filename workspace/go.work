@@ -1,6 +1,0 @@
-go 1.19
-
-use (
-	../project-1
-	../project-2
-)
